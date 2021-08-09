@@ -1,30 +1,56 @@
+:root {
+    --primary-color : rgb(196, 42, 42);
+    --secondary-color : #9ce9e9;
+    --white-color : #ffffff;
+}
+
 body{
-    width: 100%;
+    width: 95%;
+    min-width:80%;
     margin: auto;
     padding: 0rem;
+    align-items: center;
+    min-height: 700px;
+    max-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container{
-
+ text-align: center;
 }
 
+.header-head{
+    font-size: 3rem;
+}
+
+.header-para{
+    color: var(--white-color);
+}
+
+.btn-go{
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
 .head-container{
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-weight: bolder;
-    width: 85%;
-    padding: 3rem 5rem 0;
-    background-color: rgba(197, 12, 12, 0.897);
-    margin: auto;
+    padding: 3rem 1rem 0;
+    background-color: var(--primary-color);
     border-radius: 1rem 1rem 0 0;
-    height: 550px;
+    height: auto;
 }
 
-.hero-img{
-position: relative;
-width: 40%;
-height: auto;
-margin-left: 60%;
-margin-top: -3%;
+.mid-para{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-container {
+    border: 1rem outset var(--primary-color);
+    text-align: center;
+    margin:10vmax;
 }
 
 .input-date{
@@ -33,24 +59,47 @@ margin-top: -3%;
     margin-top: 10%;
     font-size: larger;
     font-weight: bold;
+    background-color: var(--secondary-color);
 }
 
 .btn-check{
     margin-top: 2rem;
     border: none;
     border-radius: 1rem;
-    background-color: rgb(208, 214, 250);
+    background-color: var(--secondary-color);
     font-size: larger;
     cursor: pointer;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
 .working {
-    
+    display: none;
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .msg {
     display: none;
     color:rgb(19, 4, 4) ;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    border-radius: 0 0 1rem 1rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5rem 0.5rem 0.5rem;
 }
 
